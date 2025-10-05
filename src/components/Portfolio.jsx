@@ -14,8 +14,8 @@ export const Portfolio = () => {
                             <h5 className="card-title">Projeto 1</h5>
                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <div className="card-footer">
+                            <small className="text-body-secondary">Last updated 3 mins ago</small>
                         </div>
                     </div>
 
@@ -32,8 +32,8 @@ export const Portfolio = () => {
                             <h5 className="card-title">Projeto 2</h5>
                             <p className="card-text">This is a short card.</p>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <div className="card-footer">
+                            <small className="text-body-secondary">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ export const Portfolio = () => {
                             <h5 className="card-title">Projeto 3</h5>
                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <div className="card-footer">
+                            <small className="text-body-secondary">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 export const Welcome = () => {
     return (<>
         <div className="row pb-4">
@@ -15,35 +16,35 @@ export const Welcome = () => {
 
                 <ul className="col-md-4 list-unstyled d-flex">
                     <li>
-                        <a className="text-body-secondary" href="#">
-                            <i class="bi bi-instagram fs-2 primary-color"></i>
-                        </a>
+                        <Link to="https://www.instagram.com/maikonsm?igsh=aWZxMDY5Z2c0dmhx&utm_source=qr" target="_blank">
+                            <i className="bi bi-instagram fs-2 link"></i>
+                        </Link>
                     </li>
                     <li className="ms-4">
-                        <a className="text-body-secondary" href="#">
-                            <i class="bi bi-facebook fs-2 primary-color"></i>
-                        </a>
+                        <Link to="https://www.facebook.com/share/1B8G1ViTH4/?mibextid=wwXIfr" target="_blank">
+                            <i className="bi bi-facebook fs-2 link">
+                            </i></Link>
                     </li>
                     <li className="ms-4">
-                        <a className="text-body-secondary" href="#">
-                            <i class="bi bi-whatsapp fs-2 primary-color"></i>
-                        </a>
+                        <Link to="https://wa.me/559284251129" target="_blank">
+                            <i className="bi bi-whatsapp fs-2 link"></i>
+                        </Link>
                     </li>
                     <li className="ms-4">
-                        <a className="text-body-secondary" href="#">
-                            <i class="bi bi-github fs-2 primary-color"></i>
-                        </a>
+                        <Link to="https://github.com/maikonsm7" target="_blank">
+                            <i className="bi bi-github fs-2 link"></i>
+                        </Link>
                     </li>
                     <li className="ms-4">
-                        <a className="text-body-secondary" href="#">
-                            <i class="bi bi-linkedin fs-2 primary-color"></i>
-                        </a>
+                        <Link to="https://linkedin.com/in/maikon-monteiro" target="_blank">
+                            <i className="bi bi-linkedin fs-2 link"></i>
+                        </Link>
                     </li>
                 </ul>
 
             </div>
             <div className="col-md-5">
-                <div className="img-profile scale-in-center"></div>                
+                <div className="img-profile scale-in-center"></div>
             </div>
         </div >
     </>)

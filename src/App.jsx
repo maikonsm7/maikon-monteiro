@@ -1,4 +1,5 @@
 import './App.css'
+import { BrowserRouter } from 'react-router'
 import { Footer } from './components/Footer'
 import { Motion } from './components/Motion'
 import { Navbar } from './components/Navbar'
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <div className="container p-3">
+        <BrowserRouter>
         <Navbar />
         <Welcome />
 
@@ -24,6 +26,7 @@ function App() {
         <Motion>
           <Footer />
         </Motion>
+        </BrowserRouter>
       </div>
     </>
   )

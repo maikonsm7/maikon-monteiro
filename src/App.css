@@ -10,20 +10,23 @@ body {
   color: var(--primary-color);
 }
 
+.link{
+  color: var(--primary-color);
+}
+
+.link:hover{
+  color: #1c800b;
+}
+
 .btn-outline-person {
   color: var(--primary-color);
-  /* Cor do texto */
   border-color: var(--primary-color);
-  /* Cor da borda */
 }
 
 .btn-outline-person:hover {
   color: #212529;
-  /* Cor do texto (muda para branco) */
   background-color: var(--primary-color);
-  /* Cor de fundo (muda para o roxo) */
   border-color: var(--primary-color);
-  /* Cor da borda */
 }
 
 .nav {
