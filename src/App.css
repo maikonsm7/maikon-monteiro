@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #39ff14;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.btn-outline-person {
+  color: var(--primary-color);
+  /* Cor do texto */
+  border-color: var(--primary-color);
+  /* Cor da borda */
+}
+
+.btn-outline-person:hover {
+  color: #212529;
+  /* Cor do texto (muda para branco) */
+  background-color: var(--primary-color);
+  /* Cor de fundo (muda para o roxo) */
+  border-color: var(--primary-color);
+  /* Cor da borda */
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.divider {
+  margin: 3rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+  background-color: var(--primary-color);
+}
+
+.img-profile {
+  border: 4px solid white;
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.img-profile {
+  background-image: url('./assets/maikon.jpg');
+  max-width: 22rem;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1;
+  clip-path: shape(from 48.59% 91.12%, curve to 28.56% 90.11% with 39.17% 92.19%, curve to 14.44% 77.78% with 17.96% 88.03%, curve to 10.02% 58.22% with 10.92% 67.54%, curve to 11.39% 40.09% with 9.13% 48.90%, curve to 18.87% 23.46% with 13.65% 31.28%, curve to 32.31% 9.15% with 24.09% 15.65%, curve to 50.89% 4.43% with 40.53% 2.66%, curve to 68.13% 13.25% with 61.25% 6.19%, curve to 80.32% 27.16% with 75.02% 20.30%, curve to 89.06% 42.58% with 85.62% 34.01%, curve to 89.24% 59.84% with 92.49% 51.14%, curve to 82.47% 78.46% with 85.98% 68.54%, curve to 68.48% 89.22% with 78.96% 88.39%, curve to 48.59% 91.12% with 58.01% 90.05%);
+}
+
+.justify {
+  text-align: justify;
+}
