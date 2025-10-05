@@ -1,9 +1,18 @@
-export const Navbar = () => {
+import { NavLink } from "react-router"
+export const Navbar = ({goHome, goSpecialties, goPortfolio}) => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
     return (<>
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark container">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Portifólio</a>
+          <a className="navbar-brand" href="#">Maikon Monteiro</a>
           
           <button className="navbar-toggler"
             type="button"
@@ -16,8 +25,9 @@ export const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
-              <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Projetos</a></li>
+              <li className="nav-item"><NavLink className="nav-link" onClick={scrollToTop}>Home</NavLink></li>
+              <li className="nav-item"><NavLink className="nav-link" onClick={goSpecialties}>Especialidades</NavLink></li>
+              <li className="nav-item"><NavLink className="nav-link" onClick={goPortfolio}>Portifólio</NavLink></li>
             </ul>
             <form className="d-flex" role="search">
               <input
