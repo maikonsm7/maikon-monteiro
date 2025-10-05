@@ -1,5 +1,5 @@
 import { NavLink } from "react-router"
-export const Navbar = ({goHome, goSpecialties, goPortfolio}) => {
+export const Navbar = ({goSpecialties, goPortfolio}) => {
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -12,7 +12,7 @@ export const Navbar = ({goHome, goSpecialties, goPortfolio}) => {
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark container">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Maikon Monteiro</a>
+          <a className="navbar-brand" href="#">Portifólio</a>
           
           <button className="navbar-toggler"
             type="button"
@@ -25,9 +25,9 @@ export const Navbar = ({goHome, goSpecialties, goPortfolio}) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
-              <li className="nav-item"><NavLink className="nav-link" onClick={scrollToTop}>Home</NavLink></li>
-              <li className="nav-item"><NavLink className="nav-link" onClick={goSpecialties}>Especialidades</NavLink></li>
-              <li className="nav-item"><NavLink className="nav-link" onClick={goPortfolio}>Portifólio</NavLink></li>
+              <li><NavLink className="nav-link link-secondary" onClick={scrollToTop}>Home</NavLink></li>
+              <li><NavLink className="nav-link link-secondary" onClick={goSpecialties}>Especialidades</NavLink></li>
+              <li><NavLink className="nav-link link-secondary" onClick={goPortfolio}>Portifólio</NavLink></li>
             </ul>
             <form className="d-flex" role="search">
               <input
