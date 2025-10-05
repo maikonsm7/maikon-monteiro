@@ -43,7 +43,7 @@ export const Welcome = () => {
 
             </div>
             <div className="col-md-5">
-                <div className="img-profile"></div>                
+                <div className="img-profile scale-in-center"></div>                
             </div>
         </div >
     </>)

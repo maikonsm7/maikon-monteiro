@@ -1,7 +1,5 @@
-import img1 from "../assets/img1.jpg"
 export const Portfolio = () => {
     return (<>
-        <div>
             <h2 className="pb-2 border-bottom">Meu Portifólio</h2>
             <div className="row g-4 py-4 row-cols-1 row-cols-md-3">
                 <div className="col">
@@ -57,6 +55,5 @@ export const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        </div>
     </>)
 }
