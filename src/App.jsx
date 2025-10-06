@@ -24,6 +24,7 @@ function App() {
         goSpecialties={() => scrollToDiv(specialties)}
         goPortfolio={() => scrollToDiv(portfolio)}
         />
+
         <Welcome />
 
         <Motion>
