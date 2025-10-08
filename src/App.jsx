@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className="container p-3">
+      <div className="container p-3 fade-in">
         <BrowserRouter>
           <Navbar
             goSpecialties={() => scrollToDiv(specialties)}
