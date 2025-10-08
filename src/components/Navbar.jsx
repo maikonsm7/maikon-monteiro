@@ -27,7 +27,7 @@ export const Navbar = ({goSpecialties, goPortfolio}) => {
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               <li><NavLink className="nav-link link-secondary" onClick={scrollToTop}>Home</NavLink></li>
               <li><NavLink className="nav-link link-secondary" onClick={goSpecialties}>Especialidades</NavLink></li>
-              <li><NavLink className="nav-link link-secondary" onClick={goPortfolio}>Portifólio</NavLink></li>
+              <li><NavLink className="nav-link link-secondary" onClick={goPortfolio}>Portfólio</NavLink></li>
             </ul>
             <form className="d-flex" role="search">
               <input

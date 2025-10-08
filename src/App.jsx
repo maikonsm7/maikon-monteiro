@@ -1,7 +1,6 @@
 import './App.css'
 import { BrowserRouter } from 'react-router'
 import { Footer } from './components/Footer'
-import { Motion } from './components/Motion'
 import { Navbar } from './components/Navbar'
 import { Portfolio } from './components/Portfolio'
 import { Specialties } from './components/Specialties'
@@ -18,26 +17,17 @@ function App() {
 
   return (
     <>
-      <div className="container p-3">
+      <div className="container p-3 fade-in">
         <BrowserRouter>
-        <Navbar
-        goSpecialties={() => scrollToDiv(specialties)}
-        goPortfolio={() => scrollToDiv(portfolio)}
-        />
+          <Navbar
+            goSpecialties={() => scrollToDiv(specialties)}
+            goPortfolio={() => scrollToDiv(portfolio)}
+          />
 
-        <Welcome />
-
-        <Motion>
-          <Specialties ref={specialties}/>
-        </Motion>
-
-        <Motion>
-          <Portfolio ref={portfolio}/>
-        </Motion>
-
-        <Motion>
+          <Welcome />
+          <Specialties ref={specialties} />
+          <Portfolio ref={portfolio} />
           <Footer />
-        </Motion>
         </BrowserRouter>
       </div>
     </>

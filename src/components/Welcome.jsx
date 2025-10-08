@@ -1,16 +1,9 @@
 import { Link } from "react-router"
-import { motion } from "framer-motion"
 export const Welcome = () => {
     return (<>
         <div className="row pb-4">
             <div className="col-md-7">
-            <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
-        >
-                    
+            
                 <h5 className="fw-normal text-white">
                     MUITO PRAZER,
                 </h5>
@@ -49,20 +42,10 @@ export const Welcome = () => {
                         </Link>
                     </li>
                 </ul>
-
-            </motion.div>
             </div>
             
             <div className="col-md-5">
-                <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-        >
-
                 <div className="img-profile"></div>
-        </motion.div>
             </div>
         </div >
     </>)
