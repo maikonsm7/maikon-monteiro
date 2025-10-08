@@ -12,7 +12,7 @@ export const Navbar = ({goSpecialties, goPortfolio}) => {
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark container">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Portifólio</a>
+          <a className="navbar-brand" href="#">Portfólio</a>
           
           <button className="navbar-toggler"
             type="button"

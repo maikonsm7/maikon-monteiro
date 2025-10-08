@@ -17,13 +17,12 @@ function App() {
 
   return (
     <>
-      <div className="container p-3 fade-in">
+      <div className="container p-3">
         <BrowserRouter>
           <Navbar
             goSpecialties={() => scrollToDiv(specialties)}
             goPortfolio={() => scrollToDiv(portfolio)}
           />
-
           <Welcome />
           <Specialties ref={specialties} />
           <Portfolio ref={portfolio} />
