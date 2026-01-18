@@ -1,9 +1,11 @@
+import { useState } from "react"
 import { Link } from "react-router"
 export const Footer = () => {
+    const [currentYear] = useState(new Date().getFullYear())
     return (<>
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fade-in-section">
 
-            <span className="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Maikon Monteiro</span>
+            <span className="mb-3 mb-md-0 text-body-secondary">&copy; {currentYear} Maikon Monteiro</span>
 
             <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li>

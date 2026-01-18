@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 export const Welcome = () => {
     return (<>
-        <div className="row pb-4">
+        <div className="row pb-4 fade-in-section">
             <div className="col-md-7">
             
                 <h5 className="fw-normal text-white">
