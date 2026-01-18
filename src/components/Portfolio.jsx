@@ -5,10 +5,10 @@ import cap3 from "../assets/cap3.jpg"
 export const Portfolio = ({props, ref}) => {
 
     return (<>
-        <div ref={ref} className="fade-in-section">
-            <h2 className="pb-2 border-bottom">Meu Portfólio</h2>
+        <div ref={ref}>
+            <h2 className="pb-2 border-bottom fade-in-section">Meu Portfólio</h2>
             <div className="row g-4 py-4 row-cols-1 row-cols-md-3">
-                <div className="col">
+                <div className="col fade-in-section">
                     <div className="card h-100">
                         <img src={cap1} alt="cap1"/>
                         <div className="card-body">
@@ -23,7 +23,7 @@ export const Portfolio = ({props, ref}) => {
 
                 </div>
         
-                <div className="col">
+                <div className="col fade-in-section">
                     <div className="card h-100">
                         <img src={cap3} alt="cap3"/>
                         <div className="card-body">
@@ -39,7 +39,7 @@ export const Portfolio = ({props, ref}) => {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col fade-in-section">
                     <div className="card h-100">
                         <img src={cap2} alt="cap2"/>
                         <div className="card-body">

@@ -86,14 +86,14 @@ body {
 .fade-in {
   opacity: 0;
   animation-name: fadeIn;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
 }
 
 .fade-in-section {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+  transition: opacity 0.4s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in-section.visible {
