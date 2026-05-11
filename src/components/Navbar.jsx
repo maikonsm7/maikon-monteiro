@@ -29,7 +29,7 @@ export const Navbar = ({goSpecialties, goPortfolio}) => {
               <li><NavLink className="nav-link link-secondary" onClick={goSpecialties}>Especialidades</NavLink></li>
               <li><NavLink className="nav-link link-secondary" onClick={goPortfolio}>Portfólio</NavLink></li>
             </ul>
-            <form className="d-flex" role="search">
+            {/* <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
                 type="search"
@@ -39,7 +39,7 @@ export const Navbar = ({goSpecialties, goPortfolio}) => {
               <button className="btn btn-outline-success btn-outline-person" type="submit">
                 Buscar
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
